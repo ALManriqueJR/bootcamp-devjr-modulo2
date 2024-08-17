@@ -25,7 +25,7 @@
     }
 
     .header {
-        padding: 35px;
+        padding: 2.2rem;
     }
 
     .flex-container {
@@ -35,51 +35,51 @@
 
     .header-title {
         color: #006F6F;
-        font-size: 28px;
+        font-size: 1.95rem;
         justify-content: center;
         font-weight: 700;
-        margin-bottom: 20px;
+        margin-bottom: 1.2rem;
     }
 
     .header-descr {
         color: #009E9E;
         font-weight: 500;
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 1.12rem;
+        margin-bottom: 0.9rem;
     }
 
     .col-1 {
         background-color: #006A6A;
         color: #FFF;
         width: 50%;
-        padding: 20px;
+        padding: 1.2rem;
     }
 
     .subscr-title {
-        font-size: 18px;
+        font-size: 1.12rem;
         font-weight: 400;
         text-align: center;
-        padding-bottom: 15px;
+        padding-bottom: 1.1rem;
     }
 
     .preco {
         font-weight: 700;
-        font-size: 26px;
+        font-size: 1.62rem;
     }
 
     .mes {
-        font-size: 15px;
+        font-size: 0.9rem;
         font-style: italic;
-        margin-left: 10px;
-        margin-bottom: 20px;
+        margin-left: 0.6rem;
+        margin-bottom: 1.2rem;
     }
 
     .btn {
         width: 100%;
-        padding: 15px 32px;
+        padding: 1rem 2rem;
         color: #006A6A;
-        font-size: 16px;
-        margin: 15px 0px 15px 0px;
+        font-size: 1rem;
+        margin: 2rem 0px 1rem 0px;
         border: none;
         border-radius: 5px;
         overflow: hidden;
@@ -95,13 +95,35 @@
     .col-2 {
         background-color: #009E9E;
         width: 50%;
-        padding: 10px 20px;
+        padding: 0.6rem 1.2rem;
         color: #FFFFFF;
-        font-size: 15px;
+        font-size: 0.95rem;
     }
     .img-group
     {
         text-align: center;
+    }
+
+    @media screen and (max-width: 620px) {
+        html{
+            font-size: 14px;
+        }
+
+        .flex-container
+        {
+            flex-direction: column;
+        }
+
+        .col-1,.col-2
+        {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 95%;
+        }
+
     }
 
 </style>
